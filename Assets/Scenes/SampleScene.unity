@@ -256,46 +256,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1746134489
+--- !u!1 &600089392
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1746134491}
-  - component: {fileID: 1746134490}
+  - component: {fileID: 600089394}
+  - component: {fileID: 600089393}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: SpawnerSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1746134490
+--- !u!114 &600089393
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1746134489}
+  m_GameObject: {fileID: 600089392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cfb2e4a579634d93b4a7474297ddc11, type: 3}
+  m_Script: {fileID: 11500000, guid: e57783f30d311423ab7a0a4e68ed8abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_definitions:
-  - prefab: {fileID: 1772186748988112, guid: 44c90f8d4bcc04ee8b6c98adf0049b14, type: 2}
-    initialCount: 3
-    isFixedSize: 1
-  - prefab: {fileID: 1468383935079860, guid: 942078a3c237b4780bad2de9977a5fae, type: 2}
-    initialCount: 2
-    isFixedSize: 0
---- !u!4 &1746134491
+  m_spawnVolume: {x: 5, y: 5, z: 5}
+  m_spawnRate: 1
+  m_spawnRateGrowth: 1
+  m_mobSize: 1
+  m_mobSizeRange: 0
+  m_spawnDefinition:
+  - spawnPrefab: {fileID: 0}
+    spawnWeight: 1
+--- !u!4 &600089394
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1746134489}
+  m_GameObject: {fileID: 600089392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
